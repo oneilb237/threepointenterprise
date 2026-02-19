@@ -19,7 +19,7 @@ export default function Home() {
         <meta name="description" content="Industrial crating solutions based in Miami, FL" />
       </Head>
 
-      <div className="min-h-screen bg-slate-950 text-white">
+      <div style={{ minHeight: '100vh', backgroundColor: '#0f172a', color: 'white' }}>
         <div onClick={() => setShowMain(true)} className={`fixed inset-0 z-50 flex items-center justify-center cursor-pointer bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 transition-opacity duration-1000 ${showMain ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}>
           <div className="text-center">
             <h1 className="text-6xl font-black mb-4"><span className="text-amber-500">3PT</span></h1>
