@@ -1,5 +1,18 @@
-import '../styles/globals.css'
+import Head from 'next/head'
 
 export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  return (
+    <>
+      <Head>
+        <style>{`
+          @tailwind base;
+          @tailwind components;
+          @tailwind utilities;
+          html { scroll-behavior: smooth; }
+          body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif; }
+        `}</style>
+      </Head>
+      <Component {...pageProps} />
+    </>
+  )
 }
