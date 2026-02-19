@@ -101,4 +101,50 @@ export default function Home() {
                 </div>
                 <div style={{ backgroundColor: '#111827', border: '1px solid #1e293b', padding: '32px', borderRadius: '12px' }}>
                   <div style={{ fontSize: '40px', marginBottom: '16px' }}>🎯</div>
-                  <h3 style={{ fontSize: '18px', fontWeight: 'bold',
+                  <h3 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '12px' }}>Built to Spec</h3>
+                  <p style={{ color: '#9ca3af' }}>Precision engineering for exact requirements</p>
+                </div>
+                <div style={{ backgroundColor: '#111827', border: '1px solid #1e293b', padding: '32px', borderRadius: '12px' }}>
+                  <div style={{ fontSize: '40px', marginBottom: '16px' }}>🛠️</div>
+                  <h3 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '12px' }}>Expert Builder</h3>
+                  <p style={{ color: '#9ca3af' }}>Full-time craftsman with deep expertise</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="contact" style={{ padding: '80px 24px', backgroundColor: '#111827' }}>
+            <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
+              <h2 style={{ fontSize: '40px', fontWeight: 'bold', marginBottom: '48px' }}>Ready to Order?</h2>
+              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '48px' }}>
+                <div>
+                  <p style={{ fontSize: '16px', color: '#d1d5db', marginBottom: '32px' }}>Get in touch. We'll provide a quote within 24 hours.</p>
+                  <div style={{ marginBottom: '24px' }}>
+                    <p style={{ fontSize: '12px', color: '#9ca3af', fontWeight: 'bold', marginBottom: '4px' }}>CALL US</p>
+                    <p style={{ fontWeight: 'bold' }}>754-213-0750</p>
+                    <p style={{ fontWeight: 'bold' }}>305-464-0414</p>
+                  </div>
+                  <div>
+                    <p style={{ fontSize: '12px', color: '#9ca3af', fontWeight: 'bold', marginBottom: '4px' }}>EMAIL</p>
+                    <p style={{ fontWeight: 'bold' }}>Quotes@threepointenterprise.com</p>
+                  </div>
+                </div>
+                <form onSubmit={handleSubmit} style={{ backgroundColor: '#0f172a', border: '1px solid #1e293b', padding: '32px', borderRadius: '12px', display: 'flex', flexDirection: 'column', gap: '16px' }}>
+                  <input type="text" required placeholder="Name" value={form.name} onChange={(e) => setForm({ ...form, name: e.target.value })} style={{ backgroundColor: '#1f2937', border: '1px solid #1e293b', borderRadius: '8px', padding: '12px', color: 'white', outline: 'none' }} />
+                  <input type="email" required placeholder="Email" value={form.email} onChange={(e) => setForm({ ...form, email: e.target.value })} style={{ backgroundColor: '#1f2937', border: '1px solid #1e293b', borderRadius: '8px', padding: '12px', color: 'white', outline: 'none' }} />
+                  <input type="tel" placeholder="Phone" value={form.phone} onChange={(e) => setForm({ ...form, phone: e.target.value })} style={{ backgroundColor: '#1f2937', border: '1px solid #1e293b', borderRadius: '8px', padding: '12px', color: 'white', outline: 'none' }} />
+                  <textarea required placeholder="Message" value={form.message} onChange={(e) => setForm({ ...form, message: e.target.value })} style={{ backgroundColor: '#1f2937', border: '1px solid #1e293b', borderRadius: '8px', padding: '12px', color: 'white', outline: 'none', height: '100px', fontFamily: 'inherit' }} />
+                  <button type="submit" style={{ backgroundColor: '#b45309', color: 'white', padding: '12px', borderRadius: '8px', fontWeight: 'bold', border: 'none', cursor: 'pointer' }}>Send Quote Request</button>
+                </form>
+              </div>
+            </div>
+          </section>
+
+          <footer style={{ backgroundColor: '#0f172a', borderTop: '1px solid #1e293b', padding: '32px 24px', textAlign: 'center', color: '#9ca3af', fontSize: '14px' }}>
+            <p>© 2026 ThreePoint Enterprise. All rights reserved.</p>
+          </footer>
+        </>
+      )}
+    </div>
+  );
+}
